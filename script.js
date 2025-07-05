@@ -369,10 +369,11 @@ document.addEventListener("DOMContentLoaded", () => {
         modalCertificationsSection
     ) {
         function openModal(data) {
+            console.log('data: ', data);
             modalTitle.textContent =
                 data.title || "Untitled Project/Skill";
-            modalBriefDescription.textContent =
-                data.briefDescription ||
+            modalBriefDescription.innerHTML =
+                data.fullDescription || data.briefDescription ||
                 "No brief description available.";
 
             techTagsContainer.innerHTML = "";
@@ -537,4 +538,102 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const projectCards = document.querySelectorAll('.project-card');
+    const detailModal = document.getElementById('detailModal');
+    const closeModalButton = document.getElementById('closeModalButton');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBriefDescription = document.getElementById('modalBriefDescription');
+    const techTags = document.getElementById('techTags');
+    const modalTechnologies = document.getElementById('modalTechnologies');
+    const certList = document.getElementById('certList');
+    const modalCertifications = document.getElementById('modalCertifications');
+    const modalLiveLink = document.getElementById('modalLiveLink');
+    const modalGithubLink = document.getElementById('modalGithubLink');
+
+    projectCards.forEach(card => {
+        card.addEventListener('click', function () {
+            const title = card.dataset.title;
+            const fullDescription = card.dataset.fullDescription;
+            const technologies = card.dataset.technologies;
+            const githubLink = card.dataset.githubLink;
+
+            modalTitle.textContent = title;
+
+            modalBriefDescription.innerHTML = '';
+
+            if (fullDescription) {
+                const descriptionPoints = fullDescription.split('$$').filter(point => point.trim() !== '');
+
+                if (descriptionPoints.length > 0) { // If there are any points after splitting and filtering
+                    const ul = document.createElement('ul');
+                    // Add Tailwind CSS classes for list styling
+                    ul.classList.add('list-disc', 'list-inside', 'space-y-2', 'text-gray-300');
+
+                    descriptionPoints.forEach(pointText => {
+                        const li = document.createElement('li');
+                        li.textContent = pointText.trim(); // Add each point as a list item
+                        ul.appendChild(li);
+                    });
+                    modalBriefDescription.appendChild(ul); // Append the entire unordered list to the modal
+                } else {
+                    // Fallback: if fullDescription exists but doesn't contain delimiters, treat as a single paragraph
+                    const p = document.createElement('p');
+                    p.textContent = fullDescription.trim();
+                    p.classList.add('text-gray-300', 'mb-6'); // Apply styling for consistency
+                    modalBriefDescription.appendChild(p);
+                }
+            } else {
+                // Fallback: if no fullDescription is provided in data attributes
+                const p = document.createElement('p');
+                p.textContent = "No detailed description available for this project.";
+                p.classList.add('text-gray-300', 'mb-6');
+                modalBriefDescription.appendChild(p);
+            }
+            // --- End of core modification ---
+
+            // Populate Technologies section
+            techTags.innerHTML = ''; // Clear previous tags
+            if (technologies) {
+                modalTechnologies.classList.remove('hidden'); // Show the section
+                technologies.split(',').forEach(tech => {
+                    const span = document.createElement('span');
+                    span.classList.add('bg-gray-600', 'text-gray-300', 'px-3', 'py-1', 'rounded-full');
+                    span.textContent = tech.trim();
+                    techTags.appendChild(span);
+                });
+            } else {
+                modalTechnologies.classList.add('hidden'); // Hide if no technologies are provided
+            }
+
+            // Populate Links section
+            if (githubLink) {
+                modalGithubLink.href = githubLink;
+                modalGithubLink.classList.remove('hidden'); // Show GitHub link
+            } else {
+                modalGithubLink.classList.add('hidden'); // Hide GitHub link if not available
+            }
+            modalLiveLink.classList.add('hidden'); // Hide Live Demo link by default if not implemented yet
+
+            // Hide Certifications section by default unless you have data for it
+            modalCertifications.classList.add('hidden');
+
+            // Show the modal
+            detailModal.classList.remove('hidden');
+        });
+    });
+
+    // Close modal event listeners
+    closeModalButton.addEventListener('click', function () {
+        detailModal.classList.add('hidden');
+    });
+
+    detailModal.addEventListener('click', function (event) {
+        // Close modal if click is on the overlay itself, not inside the modal content
+        if (event.target === detailModal) {
+            detailModal.classList.add('hidden');
+        }
+    });
 });
