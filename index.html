@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sai Tejaswi's Portfolio</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Google Fonts - Inter -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome for Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body class="bg-gray-900 text-gray-200">
+        <!-- Galaxy Background Container -->
+        <div class="galaxy-background"></div>
+
+        <!-- Header / Navigation Bar -->
+        <header
+            class="bg-gray-800 p-4 shadow-lg sticky top-0 z-50 rounded-b-lg"
+        >
+            <nav
+                class="container mx-auto flex justify-between items-center px-4 md:px-0"
+            >
+                <!-- Custom Logo -->
+                <a
+                    href="#hero"
+                    class="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors duration-300"
+                >
+                    <img
+                        id="website-logo"
+                        src="logo.png"
+                        alt="Portfolio Logo"
+                        class="h-10 w-10 mr-2 rounded-full object-cover website-logo-flashy"
+                    />
+                    <span class="text-2xl font-bold">Portfolio</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a
+                        href="#about"
+                        class="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
+                        >About</a
+                    >
+                    <a
+                        href="#experience"
+                        class="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
+                        >Education</a
+                    >
+                    <a
+                        href="#skills"
+                        class="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
+                        >Skills</a
+                    >
+                    <a
+                        href="#projects"
+                        class="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
+                        >Projects</a
+                    >
+
+                    <a
+                        href="#achievements"
+                        class="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
+                        >Achievements</a
+                    >
+                    <a
+                        href="#extracurriculars"
+                        class="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
+                        >Extracurriculars</a
+                    >
+                    <a
+                        href="#contact"
+                        class="text-gray-300 hover:text-indigo-400 transition-colors duration-300"
+                        >Contact</a
+                    >
+                </div>
+                <!-- Mobile Menu Button -->
+                <button
+                    id="mobile-menu-button"
+                    class="md:hidden text-gray-300 focus:outline-none"
+                >
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </nav>
+            <!-- Mobile Menu -->
+            <div
+                id="mobile-menu"
+                class="hidden md:hidden mt-4 space-y-2 text-center bg-gray-700 p-4 rounded-lg"
+            >
+                <a
+                    href="#about"
+                    class="block text-gray-200 hover:text-indigo-400 py-2"
+                    >About</a
+                >
+                <a
+                    href="#experience"
+                    class="block text-gray-200 hover:text-indigo-400 py-2"
+                    >Education</a
+                >
+                <a
+                    href="#skills"
+                    class="block text-gray-200 hover:text-indigo-400 py-2"
+                    >Skills</a
+                >
+                <a
+                    href="#projects"
+                    class="block text-gray-200 hover:text-indigo-400 py-2"
+                    >Projects</a
+                >
+                <a
+                    href="#achievements"
+                    class="block text-gray-200 hover:text-indigo-400 py-2"
+                    >Achievements</a
+                >
+                <a
+                    href="#extracurriculars"
+                    class="block text-gray-200 hover:text-indigo-400 py-2"
+                    >Extracurriculars</a
+                >
+                <a
+                    href="#contact"
+                    class="block text-gray-200 hover:text-indigo-400 py-2"
+                    >Contact</a
+                >
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section
+                id="hero"
+                class="relative min-h-screen flex items-center justify-center text-center p-8 overflow-hidden rounded-bl-3xl rounded-br-3xl shadow-xl float-always animate-on-scroll"
+            >
+                <div class="relative z-10 max-w-4xl mx-auto">
+                    <h1
+                        class="text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight"
+                    >
+                        <span
+                            id="hero-main-greeting-container"
+                            class="text-indigo-400"
+                        ></span>
+                    </h1>
+                    <p
+                        class="text-2xl md:text-3xl text-gray-300 mb-8 animated-text"
+                    >
+                        Innovating at the intersection of engineering and
+                        intelligence.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a
+                            href="#projects"
+                            class="btn-primary bg-indigo-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl"
+                            >View My Work</a
+                        >
+                        <a
+                            href="#contact"
+                            class="btn-primary bg-transparent border-2 border-indigo-600 text-indigo-300 px-8 py-3 rounded-full text-lg font-semibold hover:bg-indigo-600 hover:text-white"
+                            >Get in Touch</a
+                        >
+                    </div>
+                    <div class="mt-12 text-gray-400 text-sm">
+                        Scroll down to explore
+                        <i class="fas fa-arrow-down ml-2 animate-bounce"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section
+                id="about"
+                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 animate-on-scroll float-always"
+            >
+                <h2
+                    class="text-4xl font-bold text-center text-indigo-400 mb-12"
+                >
+                    About Me
+                </h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div
+                        class="md:w-1/3 flex justify-center animate-on-scroll"
+                        style="animation-delay: 0.2s"
+                    >
+                        <img
+                            src="profile_pic.png"
+                            alt="Your Photo"
+                            class="w-64 h-64 rounded-full border-4 border-indigo-500 shadow-lg object-cover transform transition-transform duration-500 hover:scale-105 hover:rotate-3"
+                        />
+                    </div>
+                    <div
+                        class="md:w-2/3 text-lg text-gray-300 leading-relaxed animate-on-scroll"
+                        style="animation-delay: 0.4s"
+                    >
+                        <p class="mb-4">
+                            I am a third-year Electrical and Electronics
+                            Engineering undergraduate at NIT Calicut with a
+                            strong foundation in circuit design and hands-on
+                            experience in translating concepts into embedded and
+                            robotic systems.
+                        </p>
+                        <p class="mb-4">
+                            Deeply passionate about
+                            <strong class="text-indigo-300">VLSI design</strong
+                            >, I am particularly drawn to the intricacies of
+                            <strong class="text-indigo-300"
+                                >Analog, Digital, and Mixed-signal
+                                circuits</strong
+                            >. I enjoy exploring how these domains interact to
+                            enable efficient, high-performance hardware
+                            solutions.
+                        </p>
+                        <p>
+                            With a keen interest in
+                            <strong class="text-indigo-300"
+                                >Semiconductor innovation and Hardware
+                                technologies</strong
+                            >, I am always eager to contribute to cutting-edge
+                            developments that shape the future of electronics.
+                            Let’s connect and create something impactful!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section
+                id="experience"
+                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always w-max"
+            >
+                <h2
+                    class="text-4xl font-bold text-center text-indigo-400 mb-12"
+                >
+                    Education
+                </h2>
+
+                <div
+                    class="relative border-l-4 border-indigo-600 pl-8 space-y-12 relative z-10"
+                >
+                    <!-- Education 1 -->
+                    <div class="relative float-always animate-on-scroll">
+                        <div
+                            class="absolute w-4 h-4 bg-indigo-600 rounded-full -left-10 top-2 transform -translate-x-1/2 border-2 border-gray-800"
+                        ></div>
+                        <h3 class="text-2xl font-semibold text-gray-100">
+                            National Institute of technology, Calicut
+                        </h3>
+                        <p class="text-indigo-300 text-lg mb-1">
+                            B.Tech in Electrical and Electronics Engineering |
+                            Aug 2023 – May 2027
+                        </p>
+                        <p class="text-indigo-300 text-md mb-1">
+                            Kozhikode, Kerala
+                        </p>
+                        <ul
+                            class="list-disc list-inside text-gray-300 ml-4 space-y-2"
+                        >
+                            <li>Current CGPA: 8.00 / 10.00</li>
+                            <li>
+                                Coursework includes Control Systems, Signals &
+                                Systems, Network Theory, Embedded System Design
+                            </li>
+                            <li>
+                                Exploring concepts beyond the curriculum through
+                                self-learning and experimentation
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="relative float-always animate-on-scroll">
+                        <div
+                            class="absolute w-4 h-4 bg-indigo-600 rounded-full -left-10 top-2 transform -translate-x-1/2 border-2 border-gray-800"
+                        ></div>
+                        <h3 class="text-2xl font-semibold text-gray-100">
+                            Lakshya International School
+                        </h3>
+                        <p class="text-indigo-300 text-lg mb-1">
+                            Class XII – CBSE | PCM | Jun 2021 – May 2023
+                            Kakinada, Andhra Pradesh
+                        </p>
+                        <p class="text-indigo-300 text-md mb-1">
+                            Kakinada, Andhra Pradesh
+                        </p>
+                        <ul
+                            class="list-disc list-inside text-gray-300 ml-4 space-y-2"
+                        >
+                            <li>Score: 450/500</li>
+                            <li>
+                                Focused study in Physics and Mathematics with
+                                analytical project involvement
+                            </li>
+                            <li>
+                                Built foundational problem-solving and reasoning
+                                abilities through academic rigor
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="relative float-always animate-on-scroll">
+                        <div
+                            class="absolute w-4 h-4 bg-indigo-600 rounded-full -left-10 top-2 transform -translate-x-1/2 border-2 border-gray-800"
+                        ></div>
+                        <h3 class="text-2xl font-semibold text-gray-100">
+                            Aditya Talent School
+                        </h3>
+                        <p class="text-indigo-300 text-lg mb-1">
+                            Class X | Jun 2020 – Apr 2021
+                        </p>
+                        <p class="text-indigo-300 text-md mb-1">
+                            Kakinada, Andhra Pradesh
+                        </p>
+                        <ul
+                            class="list-disc list-inside text-gray-300 ml-4 space-y-2"
+                        >
+                            <li>CGPA: 10.0 / 10.0</li>
+                            <li>
+                                Demonstrated consistent academic excellence and
+                                a strong work ethic
+                            </li>
+                            <li>
+                                Recognized for discipline, commitment to
+                                learning, and leadership potential.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section
+                id="skills"
+                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always"
+            >
+                <h2
+                    class="text-4xl font-bold text-center text-indigo-400 mb-12"
+                >
+                    My Skills
+                </h2>
+                <div class="flex-col">
+                    <h3
+                        class="text-3xl font-bold text-center text-indigo-300 mb-12"
+                    >
+                        Programming Languages
+                    </h3>
+                    <div
+                        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center relative z-10"
+                    >
+                        <!-- Skill 1 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="HTML5"
+                            data-description="Proficient in writing semantic and accessible HTML5 markup for various web applications. Strong understanding of web standards and best practices."
+                            data-certifications="W3C HTML5 Certified Developer, FreeCodeCamp Responsive Web Design Certificate"
+                        >
+                            <i
+                                class="fab fa-html5 text-6xl text-orange-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                HTML5
+                            </h3>
+                        </div>
+                        <!-- Skill 2 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="CSS3"
+                            data-description="Expert in modern CSS3, including Flexbox, Grid, animations, and responsive design principles. Experienced with preprocessors like Sass."
+                            data-certifications="Google Certified CSS Developer, Udemy Advanced CSS & Sass Course"
+                        >
+                            <i
+                                class="fab fa-css3-alt text-6xl text-blue-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                CSS3
+                            </h3>
+                        </div>
+                        <!-- Skill 3 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="JavaScript"
+                            data-description="Strong command of vanilla JavaScript (ES6+), DOM manipulation, asynchronous programming, and modern language features. Problem-solver and logic builder."
+                            data-certifications="Codecademy Full-Stack Engineer Path, Udacity JavaScript Developer Nanodegree"
+                        >
+                            <i
+                                class="fab fa-js text-6xl text-yellow-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                JavaScript
+                            </h3>
+                        </div>
+                        <!-- Skill 4 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="React.js"
+                            data-description="Proficient in building single-page applications with React.js, including Hooks, Context API, Redux for state management, and component-based architecture."
+                            data-certifications="Meta Frontend Developer Professional Certificate, Coursera React Advanced"
+                        >
+                            <i
+                                class="fab fa-react text-6xl text-blue-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                React.js
+                            </h3>
+                        </div>
+                        <!-- Skill 5 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Vue.js"
+                            data-description="Experienced with Vue.js for progressive web apps and reactive interfaces. Knowledgeable in Vue Router, Vuex, and component lifecycle."
+                            data-certifications="Vue Mastery Certificate, Maximilian Schwarzmüller Vue.js Course"
+                        >
+                            <i
+                                class="fab fa-vuejs text-6xl text-green-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Vue.js
+                            </h3>
+                        </div>
+                        <!-- Skill 6 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Angular"
+                            data-description="Familiar with Angular framework for enterprise-level applications, including TypeScript, RxJS, and Angular CLI."
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fab fa-angular text-6xl text-red-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Angular
+                            </h3>
+                        </div>
+                        <!-- Skill 7 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Sass/SCSS"
+                            data-description="Proficient in using Sass and SCSS to write more maintainable, reusable, and efficient CSS with variables, mixins, and functions."
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fab fa-sass text-6xl text-pink-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Sass/SCSS
+                            </h3>
+                        </div>
+                        <!-- Skill 8 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Bootstrap"
+                            data-description="Experienced in rapidly building responsive web interfaces using Bootstrap framework and its component library."
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fab fa-bootstrap text-6xl text-purple-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Bootstrap
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="flex-col">
+                    <h3
+                        class="text-3xl font-bold text-center text-indigo-300 mb-12"
+                    >
+                        Tools & Technologies
+                    </h3>
+                    <div
+                        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center relative z-10"
+                    >
+                        <!-- Skill 9 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Tailwind CSS"
+                            data-description="Highly skilled in utility-first CSS framework Tailwind CSS for fast and efficient custom design systems and responsive layouts."
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-brush text-6xl text-cyan-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Tailwind CSS
+                            </h3>
+                        </div>
+                        <!-- Skill 10 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Node.js"
+                            data-description="Proficient in building scalable backend services and RESTful APIs using Node.js and Express.js framework."
+                            data-certifications="IBM Full Stack Developer Certification"
+                        >
+                            <i
+                                class="fab fa-node-js text-6xl text-green-600 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Node.js
+                            </h3>
+                        </div>
+                        <!-- Skill 11 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Python"
+                            data-description="Experienced in Python for scripting, data analysis, and web development (Flask/Django). Familiar with various libraries."
+                            data-certifications="Google IT Automation with Python Professional Certificate"
+                        >
+                            <i
+                                class="fab fa-python text-6xl text-blue-600 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Python
+                            </h3>
+                        </div>
+                        <!-- Skill 12 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="SQL/NoSQL"
+                            data-description="Proficient in relational databases (MySQL, PostgreSQL) and NoSQL databases (MongoDB, Firestore) for data modeling and management."
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-database text-6xl text-gray-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                SQL/NoSQL
+                            </h3>
+                        </div>
+                        <!-- Skill 13 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Git/GitHub"
+                            data-description="Version control expert with Git and GitHub for collaborative development, branching, merging, and pull requests."
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fab fa-git-alt text-6xl text-red-600 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Git/GitHub
+                            </h3>
+                        </div>
+                        <!-- Skill 14 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Cloud (AWS/GCP)"
+                            data-description="Familiar with cloud platforms like AWS and GCP, including deploying applications, managing databases, and utilizing serverless functions."
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-cloud text-6xl text-blue-300 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Cloud (AWS/GCP)
+                            </h3>
+                        </div>
+                        <!-- Skill 15 -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            data-type="skill"
+                            data-title="Responsive Design"
+                            data-description="Proficient in creating responsive and mobile-first web designs that provide optimal viewing and interaction across a wide range of devices."
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-mobile-alt text-6xl text-teal-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Responsive Design
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section
+                id="projects"
+                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always"
+            >
+                <h2
+                    class="text-4xl font-bold text-center text-indigo-400 mb-12"
+                >
+                    My Projects
+                </h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10"
+                >
+                    <!-- Project 1 -->
+                    <div
+                        class="project-card bg-gray-700 rounded-lg shadow-lg overflow-hidden card-effect group float-always animate-on-scroll"
+                        data-type="project"
+                        data-title="E-commerce Platform"
+                        data-brief-description="A responsive web application for a fictional e-commerce store, featuring product catalog and shopping cart."
+                        data-full-description="This project involved developing a full-stack responsive web application for a fictional e-commerce store. The frontend was built with React and Tailwind CSS, focusing on a clean, intuitive user interface and mobile responsiveness. Key features include a dynamic product catalog with filtering and search capabilities, a persistent shopping cart, and a secure multi-step checkout process. The backend was developed using Node.js with Express.js, interacting with a MongoDB database for product, user, and order management. Redux was used for efficient state management on the client-side. Challenges included optimizing image loading for performance and ensuring robust input validation across the application."
+                        data-technologies="React, Node.js, Express.js, MongoDB, Redux, Tailwind CSS"
+                        data-live-link="https://example.com/ecommerce-live"
+                        data-github-link="https://github.com/yourusername/ecommerce-repo"
+                        data-certifications="Certified in MERN Stack Development, Full Stack Web Developer Bootcamp Certificate"
+                    >
+                        <div
+                            class="project-image-container relative overflow-hidden"
+                        >
+                            <img
+                                src="https://placehold.co/600x400/2d3748/a0aec0?text=Project+1+Image"
+                                alt="E-commerce Platform Image"
+                                class="w-full h-56 object-cover transform scale-100 transition-transform duration-500 group-hover:scale-105"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            >
+                                <span class="text-white text-xl font-bold"
+                                    >View Details</span
+                                >
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-indigo-300 mb-3">
+                                E-commerce Platform
+                            </h3>
+                            <p class="text-gray-300 mb-4 text-sm">
+                                A responsive web application for e-commerce,
+                                featuring product catalog and shopping cart.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-sm mb-4">
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >React</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >Node.js</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >MongoDB</span
+                                >
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a
+                                    href="https://github.com/yourusername/ecommerce-repo"
+                                    class="btn-primary text-gray-400 hover:text-gray-300"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fab fa-github mr-2"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="project-card bg-gray-700 rounded-lg shadow-lg overflow-hidden card-effect group float-always animate-on-scroll"
+                        data-type="project"
+                        data-title="Data Visualization Dashboard"
+                        data-brief-description="A data visualization tool built with Flask and D3.js to analyze public health data."
+                        data-full-description="This project involved building an interactive data visualization dashboard using Flask for the backend and D3.js for dynamic frontend visualizations. The dashboard processes and displays public health data from a PostgreSQL database, allowing users to filter data by region, time period, and health metric. Visualizations include interactive bar charts, line graphs, and choropleth maps, providing insights into disease prevalence and health trends. Key challenges included efficiently handling large datasets and creating custom, performant D3.js visualizations that could adapt to various data dimensions."
+                        data-technologies="Python, Flask, D3.js, PostgreSQL"
+                        data-live-link="https://example.com/data-viz-live"
+                        data-github-link="https://github.com/yourusername/data-viz-repo"
+                        data-certifications="Data Visualization with Python Certificate, Applied Data Science Specialization"
+                    >
+                        <div
+                            class="project-image-container relative overflow-hidden"
+                        >
+                            <img
+                                src="https://placehold.co/600x400/2d3748/a0aec0?text=Project+2+Image"
+                                alt="Data Visualization Dashboard Image"
+                                class="w-full h-56 object-cover transform scale-100 transition-transform duration-500 group-hover:scale-105"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            >
+                                <span class="text-white text-xl font-bold"
+                                    >View Details</span
+                                >
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-indigo-300 mb-3">
+                                Data Visualization Dashboard
+                            </h3>
+                            <p class="text-gray-300 mb-4 text-sm">
+                                A data visualization tool built with Flask and
+                                D3.js to analyze public health data.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-sm mb-4">
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >Python</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >D3.js</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >Flask</span
+                                >
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a
+                                    href="https://github.com/yourusername/data-viz-repo"
+                                    class="btn-primary text-gray-400 hover:text-gray-300"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fab fa-github mr-2"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div
+                        class="project-card bg-gray-700 rounded-lg shadow-lg overflow-hidden card-effect group float-always animate-on-scroll"
+                        data-type="project"
+                        data-title="Vue.js E-commerce Frontend"
+                        data-brief-description="An e-commerce front-end application built with modern JavaScript frameworks and integrated with a mock API."
+                        data-full-description="This project showcases a responsive and performant e-commerce frontend application developed using Vue.js for the core framework and Tailwind CSS for utility-first styling. It features dynamic product listings fetched from a mock API, product detail pages, and a client-side shopping cart. Vuex was implemented for centralized state management, ensuring a predictable data flow across components. The focus was on delivering a smooth user experience with fast navigation and visually appealing, responsive layouts on all screen sizes. Implemented client-side routing with Vue Router to create a single-page application experience."
+                        data-technologies="Vue.js, Tailwind CSS, Vuex, API Integration, Vue Router"
+                        data-live-link="https://example.com/vue-ecommerce-live"
+                        data-github-link="https://github.com/yourusername/vue-ecommerce-repo"
+                        data-certifications="Certified Frontend Developer (Vue.js), Modern JavaScript Bootcamp"
+                    >
+                        <div
+                            class="project-image-container relative overflow-hidden"
+                        >
+                            <img
+                                src="https://placehold.co/600x400/2d3748/a0aec0?text=Project+3+Image"
+                                alt="Vue.js E-commerce Frontend Image"
+                                class="w-full h-56 object-cover transform scale-100 transition-transform duration-500 group-hover:scale-105"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            >
+                                <span class="text-white text-xl font-bold"
+                                    >View Details</span
+                                >
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-indigo-300 mb-3">
+                                Vue.js E-commerce Frontend
+                            </h3>
+                            <p class="text-gray-300 mb-4 text-sm">
+                                An e-commerce front-end application built with
+                                modern JavaScript frameworks and integrated with
+                                a mock API.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-sm mb-4">
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >Vue.js</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >Tailwind CSS</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >API Integration</span
+                                >
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a
+                                    href="https://github.com/yourusername/vue-ecommerce-repo"
+                                    class="btn-primary text-gray-400 hover:text-gray-300"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fab fa-github mr-2"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div
+                        class="project-card bg-gray-700 rounded-lg shadow-lg overflow-hidden card-effect group float-always animate-on-scroll"
+                        data-type="project"
+                        data-title="PWA Task Management App"
+                        data-brief-description="A mobile-first progressive web app (PWA) for task management, focusing on offline capabilities and performance."
+                        data-full-description="This Progressive Web Application (PWA) was designed as a mobile-first task management tool. It prioritizes offline capabilities and fast loading times through the implementation of Service Workers for asset caching and IndexedDB for local data persistence. Users can add, delete, and mark tasks as complete even without an internet connection. The application ensures a smooth and native-app-like user experience across various devices. The frontend was developed using vanilla HTML, CSS, and JavaScript, demonstrating a strong understanding of core web technologies and PWA best practices."
+                        data-technologies="PWA, Service Workers, IndexedDB, HTML, CSS, JavaScript"
+                        data-live-link="https://example.com/pwa-task-manager-live"
+                        data-github-link="https://github.com/yourusername/pwa-task-manager-repo"
+                        data-certifications="Google PWA Expert Badge"
+                    >
+                        <div
+                            class="project-image-container relative overflow-hidden"
+                        >
+                            <img
+                                src="https://placehold.co/600x400/2d3748/a0aec0?text=Project+4+Image"
+                                alt="PWA Task Management App Image"
+                                class="w-full h-56 object-cover transform scale-100 transition-transform duration-500 group-hover:scale-105"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                            >
+                                <span class="text-white text-xl font-bold"
+                                    >View Details</span
+                                >
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-indigo-300 mb-3">
+                                PWA Task Management App
+                            </h3>
+                            <p class="text-gray-300 mb-4 text-sm">
+                                A mobile-first progressive web app (PWA) for
+                                task management, focusing on offline
+                                capabilities and performance.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-sm mb-4">
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >PWA</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >Service Workers</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >IndexedDB</span
+                                >
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a
+                                    href="https://github.com/yourusername/pwa-task-manager-repo"
+                                    class="btn-primary text-gray-400 hover:text-gray-300"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fab fa-github mr-2"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section
+                id="achievements"
+                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always"
+            >
+                <h2
+                    class="text-4xl font-bold text-center text-indigo-400 mb-12"
+                >
+                    My Achievements
+                </h2>
+                <div
+                    class="relative z-10 text-lg text-gray-300 leading-relaxed"
+                >
+                    <ul class="list-disc list-inside space-y-4">
+                        <li>
+                            <strong class="text-indigo-300"
+                                >Awarded 'Developer of the Year'</strong
+                            >
+                            at Tech Solutions Inc. for outstanding contributions
+                            to project X, leading to a 15% increase in user
+                            engagement.
+                        </li>
+                        <li>
+                            Successfully led a team of 3 developers to deliver
+                            <strong class="text-indigo-300"
+                                >Project Y ahead of schedule</strong
+                            >, receiving high praise for efficient project
+                            management and code quality.
+                        </li>
+                        <li>
+                            Published a technical article on
+                            <strong class="text-indigo-300"
+                                >Modern JavaScript Frameworks</strong
+                            >
+                            on a leading tech blog, gaining over 10,000 views
+                            and positive industry feedback.
+                        </li>
+                        <li>
+                            Completed the
+                            <strong class="text-indigo-300"
+                                >100 Days of Code challenge</strong
+                            >, mastering advanced JavaScript concepts and
+                            building several mini-projects.
+                        </li>
+                        <li>
+                            Achieved
+                            <strong class="text-indigo-300"
+                                >Top 5% in a national coding competition</strong
+                            >, demonstrating strong problem-solving and
+                            algorithmic skills.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Extracurricular Activities Section -->
+            <section
+                id="extracurriculars"
+                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always"
+            >
+                <h2
+                    class="text-4xl font-bold text-center text-indigo-400 mb-12"
+                >
+                    Extracurricular Activities
+                </h2>
+                <div
+                    class="relative z-10 text-lg text-gray-300 leading-relaxed"
+                >
+                    <ul class="list-disc list-inside space-y-4">
+                        <li>
+                            <strong class="text-indigo-300"
+                                >Volunteer Mentor</strong
+                            >
+                            for aspiring web developers at a local community
+                            center, guiding them through their first coding
+                            projects and career advice.
+                        </li>
+                        <li>
+                            <strong class="text-indigo-300"
+                                >Co-organizer of local Tech Meetups</strong
+                            >, responsible for planning events, inviting
+                            speakers, and fostering a collaborative environment
+                            for developers.
+                        </li>
+                        <li>
+                            Active participant in
+                            <strong class="text-indigo-300"
+                                >open-source projects on GitHub</strong
+                            >, contributing to the development and maintenance
+                            of various tools and libraries.
+                        </li>
+                        <li>
+                            <strong class="text-indigo-300"
+                                >Captain of the University Debate Team</strong
+                            >, which significantly enhanced my public speaking,
+                            critical thinking, and logical argumentation skills.
+                        </li>
+                        <li>
+                            Engaged in
+                            <strong class="text-indigo-300"
+                                >competitive gaming (eSports)</strong
+                            >, improving teamwork, strategic planning, and quick
+                            decision-making under pressure.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section
+                id="contact"
+                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always"
+            >
+                <h2
+                    class="text-4xl font-bold text-center text-indigo-400 mb-12"
+                >
+                    Get in Touch
+                </h2>
+                <div class="max-w-2xl mx-auto relative z-10 text-center">
+                    <p class="text-center text-gray-300 mb-8">
+                        Connect with me on:
+                    </p>
+
+                    <div class="flex justify-center space-x-8 text-5xl">
+                        <a
+                            href="https://github.com/yourusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-icon-link github text-gray-400 hover:text-white transition-colors duration-300"
+                        >
+                            <i class="fab fa-github-square"></i>
+                            <span class="sr-only">GitHub</span>
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/yourusername"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-icon-link linkedin text-gray-400 hover:text-white transition-colors duration-300"
+                        >
+                            <i class="fab fa-linkedin"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                        <a
+                            href="mailto:saitejaswi1002@gmail.com"
+                            class="social-icon-link gmail text-gray-400 hover:text-white transition-colors duration-300"
+                        >
+                            <i class="fas fa-envelope-square"></i>
+                            <span class="sr-only">Email</span>
+                        </a>
+                    </div>
+
+                    <p class="mt-12 text-gray-400 text-sm">
+                        Feel free to reach out for collaborations or inquiries!
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="bg-gray-900 p-8 text-center text-gray-500 text-sm rounded-t-lg mt-16 float-always animate-on-scroll"
+        >
+            <p>
+                &copy; 2025 Sai Tejaswi. All rights reserved. Built with
+                <span class="text-red-500">&hearts;</span> and a lot of
+                <span class="text-indigo-400">code</span>.
+            </p>
+        </footer>
+
+        <!-- Project/Skill Detail Modal -->
+        <div id="detailModal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close-button" id="closeModalButton">
+                    &times;
+                </button>
+                <h3
+                    class="text-3xl font-bold text-indigo-400 mb-4"
+                    id="modalTitle"
+                ></h3>
+                <p class="text-gray-300 mb-6" id="modalBriefDescription"></p>
+
+                <div id="modalTechnologies" class="mb-6">
+                    <p class="modal-section-title">Technologies Used:</p>
+                    <div id="techTags" class="flex flex-wrap gap-2"></div>
+                </div>
+
+                <div id="modalCertifications" class="mb-6">
+                    <p class="modal-section-title">
+                        Certifications / Achievements:
+                    </p>
+                    <ul id="certList" class="list-none p-0 m-0"></ul>
+                </div>
+
+                <div id="modalLinks" class="flex flex-wrap gap-4 mt-6">
+                    <a
+                        id="modalLiveLink"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn-primary bg-indigo-600 text-white px-6 py-2 rounded-full text-lg font-semibold shadow-md hover:shadow-lg hidden"
+                    >
+                        <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                    </a>
+                    <a
+                        id="modalGithubLink"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn-primary bg-gray-600 text-gray-200 px-6 py-2 rounded-full text-lg font-semibold shadow-md hover:shadow-lg hidden"
+                    >
+                        <i class="fab fa-github mr-2"></i> GitHub Repo
+                    </a>
+                    <button
+                        id="showFullDetailsBtn"
+                        class="btn-primary bg-purple-600 text-white px-6 py-2 rounded-full text-lg font-semibold shadow-md hover:shadow-lg"
+                    >
+                        Show Full Details
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
