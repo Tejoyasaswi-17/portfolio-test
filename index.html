@@ -334,243 +334,600 @@
             <!-- Skills Section -->
             <section
                 id="skills"
-                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always"
+                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always skills-section-design"
             >
                 <h2
                     class="text-4xl font-bold text-center text-indigo-400 mb-12"
                 >
                     My Skills
                 </h2>
-                <div class="flex-col">
+                <div class="mb-12">
                     <h3
-                        class="text-3xl font-bold text-center text-indigo-300 mb-12"
+                        class="text-3xl font-bold text-center text-gray-200 mb-8"
                     >
                         Programming Languages
                     </h3>
                     <div
                         class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center relative z-10"
                     >
-                        <!-- Skill 1 -->
+                        <!-- Skill: C -->
                         <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0s"
                             data-type="skill"
-                            data-title="HTML5"
-                            data-description="Proficient in writing semantic and accessible HTML5 markup for various web applications. Strong understanding of web standards and best practices."
+                            data-title="C Programming"
+                            data-description="Proficient in C for system programming, data structures, and algorithms. Strong understanding of memory management and low-level operations."
+                            data-certifications="Nil"
                         >
                             <i
-                                class="fab fa-html5 text-6xl text-orange-500 mb-4 skill-icon"
+                                class="fas fa-file-code text-6xl text-blue-500 mb-4 skill-icon"
                             ></i>
                             <h3 class="text-xl font-semibold text-gray-100">
-                                HTML5
+                                C Programming
                             </h3>
                         </div>
-                        <!-- Skill 2 -->
+                        <!-- Skill: Python -->
                         <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
-                            data-type="skill"
-                            data-title="CSS3"
-                            data-description="Expert in modern CSS3, including Flexbox, Grid, animations, and responsive design principles. Experienced with preprocessors like Sass."
-                        >
-                            <i
-                                class="fab fa-css3-alt text-6xl text-blue-500 mb-4 skill-icon"
-                            ></i>
-                            <h3 class="text-xl font-semibold text-gray-100">
-                                CSS3
-                            </h3>
-                        </div>
-                        <!-- Skill 3 -->
-                        <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
-                            data-type="skill"
-                            data-title="JavaScript"
-                            data-description="Strong command of vanilla JavaScript (ES6+), DOM manipulation, asynchronous programming, and modern language features. Problem-solver and logic builder."
-                        >
-                            <i
-                                class="fab fa-js text-6xl text-yellow-500 mb-4 skill-icon"
-                            ></i>
-                            <h3 class="text-xl font-semibold text-gray-100">
-                                JavaScript
-                            </h3>
-                        </div>
-                        <!-- Skill 4 -->
-                        <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
-                            data-type="skill"
-                            data-title="React.js"
-                            data-description="Proficient in building single-page applications with React.js, including Hooks, Context API, Redux for state management, and component-based architecture."
-                        >
-                            <i
-                                class="fab fa-react text-6xl text-blue-400 mb-4 skill-icon"
-                            ></i>
-                            <h3 class="text-xl font-semibold text-gray-100">
-                                React.js
-                            </h3>
-                        </div>
-                        <!-- Skill 5 -->
-                        <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
-                            data-type="skill"
-                            data-title="Vue.js"
-                            data-description="Experienced with Vue.js for progressive web apps and reactive interfaces. Knowledgeable in Vue Router, Vuex, and component lifecycle."
-                        >
-                            <i
-                                class="fab fa-vuejs text-6xl text-green-500 mb-4 skill-icon"
-                            ></i>
-                            <h3 class="text-xl font-semibold text-gray-100">
-                                Vue.js
-                            </h3>
-                        </div>
-                        <!-- Skill 6 -->
-                        <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
-                            data-type="skill"
-                            data-title="Angular"
-                            data-description="Familiar with Angular framework for enterprise-level applications, including TypeScript, RxJS, and Angular CLI."
-                        >
-                            <i
-                                class="fab fa-angular text-6xl text-red-500 mb-4 skill-icon"
-                            ></i>
-                            <h3 class="text-xl font-semibold text-gray-100">
-                                Angular
-                            </h3>
-                        </div>
-                        <!-- Skill 7 -->
-                        <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
-                            data-type="skill"
-                            data-title="Sass/SCSS"
-                            data-description="Proficient in using Sass and SCSS to write more maintainable, reusable, and efficient CSS with variables, mixins, and functions."
-                        >
-                            <i
-                                class="fab fa-sass text-6xl text-pink-400 mb-4 skill-icon"
-                            ></i>
-                            <h3 class="text-xl font-semibold text-gray-100">
-                                Sass/SCSS
-                            </h3>
-                        </div>
-                        <!-- Skill 8 -->
-                        <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
-                            data-type="skill"
-                            data-title="Bootstrap"
-                            data-description="Experienced in rapidly building responsive web interfaces using Bootstrap framework and its component library."
-                        >
-                            <i
-                                class="fab fa-bootstrap text-6xl text-purple-500 mb-4 skill-icon"
-                            ></i>
-                            <h3 class="text-xl font-semibold text-gray-100">
-                                Bootstrap
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <br />
-                <br />
-                <div class="flex-col">
-                    <h3
-                        class="text-3xl font-bold text-center text-indigo-300 mb-12"
-                    >
-                        Tools & Technologies
-                    </h3>
-                    <div
-                        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center relative z-10"
-                    >
-                        <!-- Skill 9 -->
-                        <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
-                            data-type="skill"
-                            data-title="Tailwind CSS"
-                            data-description="Highly skilled in utility-first CSS framework Tailwind CSS for fast and efficient custom design systems and responsive layouts."
-                        >
-                            <i
-                                class="fas fa-brush text-6xl text-cyan-400 mb-4 skill-icon"
-                            ></i>
-                            <h3 class="text-xl font-semibold text-gray-100">
-                                Tailwind CSS
-                            </h3>
-                        </div>
-                        <!-- Skill 10 -->
-                        <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
-                            data-type="skill"
-                            data-title="Node.js"
-                            data-description="Proficient in building scalable backend services and RESTful APIs using Node.js and Express.js framework."
-                        >
-                            <i
-                                class="fab fa-node-js text-6xl text-green-600 mb-4 skill-icon"
-                            ></i>
-                            <h3 class="text-xl font-semibold text-gray-100">
-                                Node.js
-                            </h3>
-                        </div>
-                        <!-- Skill 11 -->
-                        <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.1s"
                             data-type="skill"
                             data-title="Python"
-                            data-description="Experienced in Python for scripting, data analysis, and web development (Flask/Django). Familiar with various libraries."
+                            data-description="Experienced in Python for scripting, data analysis, and general-purpose programming. Familiar with various libraries and frameworks."
+                            data-technologies="Python, Scripting, Data Analysis, Web Frameworks"
+                            data-certifications="Nil"
                         >
                             <i
-                                class="fab fa-python text-6xl text-blue-600 mb-4 skill-icon"
+                                class="fab fa-python text-6xl text-yellow-500 mb-4 skill-icon"
                             ></i>
                             <h3 class="text-xl font-semibold text-gray-100">
                                 Python
                             </h3>
                         </div>
-                        <!-- Skill 12 -->
+                        <!-- Skill: Verilog -->
                         <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.2s"
                             data-type="skill"
-                            data-title="SQL/NoSQL"
-                            data-description="Proficient in relational databases (MySQL, PostgreSQL) and NoSQL databases (MongoDB, Firestore) for data modeling and management."
+                            data-title="Verilog"
+                            data-description="Proficient in Verilog HDL for digital circuit design, simulation, and synthesis."
+                            data-technologies="Verilog HDL, Digital Design, Simulation, Synthesis"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-microchip text-6xl text-green-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Verilog
+                            </h3>
+                        </div>
+                        <!-- Skill: MATLAB -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.3s"
+                            data-type="skill"
+                            data-title="MATLAB"
+                            data-description="Skilled in MATLAB for numerical computation, algorithm development, data analysis, and visualization in engineering applications."
+                            data-technologies="MATLAB, Numerical Computing, Data Analysis, Signal Processing"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-calculator text-6xl text-red-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                MATLAB
+                            </h3>
+                        </div>
+                        <!-- Skill: SQL -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.4s"
+                            data-type="skill"
+                            data-title="SQL"
+                            data-description="Proficient in SQL for database querying, manipulation, and design. Experienced with relational database management systems."
+                            data-technologies="SQL, Database Management, Data Querying, Relational Databases"
+                            data-certifications="Nil"
                         >
                             <i
                                 class="fas fa-database text-6xl text-gray-400 mb-4 skill-icon"
                             ></i>
                             <h3 class="text-xl font-semibold text-gray-100">
-                                SQL/NoSQL
+                                SQL
                             </h3>
                         </div>
-                        <!-- Skill 13 -->
+                        <!-- Skill: Git -->
                         <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.5s"
                             data-type="skill"
-                            data-title="Git/GitHub"
-                            data-description="Version control expert with Git and GitHub for collaborative development, branching, merging, and pull requests."
+                            data-title="Git"
+                            data-description="Expert in Git for version control, collaborative development, branching, merging, and managing code repositories."
+                            data-technologies="Git, Version Control, GitHub, GitLab, Bitbucket"
+                            data-certifications="Nil"
                         >
                             <i
-                                class="fab fa-git-alt text-6xl text-red-600 mb-4 skill-icon"
+                                class="fab fa-git-alt text-6xl text-orange-600 mb-4 skill-icon"
                             ></i>
                             <h3 class="text-xl font-semibold text-gray-100">
-                                Git/GitHub
+                                Git
                             </h3>
                         </div>
-                        <!-- Skill 14 -->
+                        <!-- Skill: OpenCV -->
                         <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.6s"
                             data-type="skill"
-                            data-title="Cloud (AWS/GCP)"
-                            data-description="Familiar with cloud platforms like AWS and GCP, including deploying applications, managing databases, and utilizing serverless functions."
+                            data-title="OpenCV"
+                            data-description="Experienced in using OpenCV for computer vision tasks, image processing, and object detection."
+                            data-technologies="Computer Vision, Image Processing, Object Detection"
+                            data-certifications="Nil"
                         >
                             <i
-                                class="fas fa-cloud text-6xl text-blue-300 mb-4 skill-icon"
+                                class="fas fa-camera text-6xl text-purple-400 mb-4 skill-icon"
                             ></i>
                             <h3 class="text-xl font-semibold text-gray-100">
-                                Cloud (AWS/GCP)
+                                OpenCV
                             </h3>
                         </div>
-                        <!-- Skill 15 -->
+                        <!-- Skill: ROS2 -->
                         <div
-                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect float-always animate-on-scroll"
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.7s"
                             data-type="skill"
-                            data-title="Responsive Design"
-                            data-description="Proficient in creating responsive and mobile-first web designs that provide optimal viewing and interaction across a wide range of devices."
+                            data-title="ROS2"
+                            data-description="Familiar with ROS2 for robotic application development, including communication, navigation, and manipulation."
+                            data-technologies="Robotics, Middleware, Communication, Navigation"
+                            data-certifications="Nil"
                         >
                             <i
-                                class="fas fa-mobile-alt text-6xl text-teal-400 mb-4 skill-icon"
+                                class="fas fa-robot text-6xl text-teal-400 mb-4 skill-icon"
                             ></i>
                             <h3 class="text-xl font-semibold text-gray-100">
-                                Responsive Design
+                                ROS2
+                            </h3>
+                        </div>
+                        <!-- Skill: OOPs -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.8s"
+                            data-type="skill"
+                            data-title="Object-Oriented Programming (OOP)"
+                            data-description="Strong understanding of OOP principles (encapsulation, inheritance, polymorphism, abstraction) in various languages."
+                            data-technologies="Classes, Objects, Inheritance, Polymorphism"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-object-group text-6xl text-indigo-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                OOP
+                            </h3>
+                        </div>
+                        <!-- Skill: Arduino Programming -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.9s"
+                            data-type="skill"
+                            data-title="Arduino Programming"
+                            data-description="Experienced in programming Arduino microcontrollers for embedded systems, IoT projects, and automation."
+                            data-technologies="Arduino IDE, C++, Microcontrollers, Sensors"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-microchip text-6xl text-blue-300 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Arduino Programming
+                            </h3>
+                        </div>
+                        <!-- Skill: YOLO -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1s"
+                            data-type="skill"
+                            data-title="YOLO (You Only Look Once)"
+                            data-description="Familiar with YOLO for real-time object detection and recognition in computer vision applications."
+                            data-technologies="Object Detection, Deep Learning, Computer Vision"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-crosshairs text-6xl text-red-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                YOLO
+                            </h3>
+                        </div>
+                        <!-- Skill: C# -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.1s"
+                            data-type="skill"
+                            data-title="C#"
+                            data-description="Basic understanding of C# for application development, particularly in the .NET ecosystem."
+                            data-technologies="C#, .NET, Object-Oriented Programming"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-code text-6xl text-green-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Assembly
+                            </h3>
+                        </div>
+                        <!-- Skill: MicroPython -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.2s"
+                            data-type="skill"
+                            data-title="MicroPython"
+                            data-description="Experienced in MicroPython for programming microcontrollers and embedded systems with Python."
+                            data-technologies="Microcontrollers, Embedded Systems, IoT, Python"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-ethernet text-6xl text-blue-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                MicroPython
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3
+                        class="text-3xl font-bold text-center text-gray-200 mb-8"
+                    >
+                        Tools & Design Frameworks
+                    </h3>
+                    <div
+                        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center relative z-10"
+                    >
+                        <!-- Tool: Vivado Design Suite -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0s"
+                            data-type="tool"
+                            data-title="Vivado Design Suite"
+                            data-description="Proficient in Xilinx Vivado Design Suite for FPGA and SoC design, including synthesis, implementation, and verification."
+                            data-technologies="FPGA, SoC, HDL Synthesis, Simulation"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-microchip text-6xl text-purple-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Vivado Design Suite
+                            </h3>
+                        </div>
+                        <!-- Tool: LTSpice -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.1s"
+                            data-type="tool"
+                            data-title="LTSpice"
+                            data-description="Experienced in LTSpice for analog circuit simulation and analysis, including transient, AC, and DC sweep analyses."
+                            data-technologies="Analog Circuits, SPICE Simulation, Circuit Analysis"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-wave-square text-6xl text-red-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                LTSpice
+                            </h3>
+                        </div>
+                        <!-- Tool: Simulink -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.2s"
+                            data-type="tool"
+                            data-title="Simulink"
+                            data-description="Skilled in Simulink for modeling, simulating, and analyzing dynamic systems. Used for control systems, signal processing, and embedded systems."
+                            data-technologies="System Modeling, Simulation, Control Systems, Signal Processing"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-chart-line text-6xl text-blue-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Simulink
+                            </h3>
+                        </div>
+                        <!-- Tool: Proteus -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.3s"
+                            data-type="tool"
+                            data-title="Proteus"
+                            data-description="Proficient in Proteus ISIS and ARES for circuit simulation and PCB design, including microcontrollers and embedded systems."
+                            data-technologies="Circuit Simulation, PCB Design, Microcontrollers, Embedded Systems"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-robot text-6xl text-teal-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Proteus
+                            </h3>
+                        </div>
+                        <!-- Tool: QUCS -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.4s"
+                            data-type="tool"
+                            data-title="QUCS"
+                            data-description="Experienced with QUCS (Quite Universal Circuit Simulator) for circuit simulation, including RF and mixed-signal circuits."
+                            data-technologies="Circuit Simulation, RF Design, Mixed-Signal Circuits"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-bezier-curve text-6xl text-orange-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                QUCS
+                            </h3>
+                        </div>
+                        <!-- Tool: Altium -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.5s"
+                            data-type="tool"
+                            data-title="Altium Designer"
+                            data-description="Familiar with Altium Designer for professional PCB design, schematic capture, and layout."
+                            data-technologies="PCB Design, Schematic Capture, Layout"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-drafting-compass text-6xl text-indigo-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Altium Designer
+                            </h3>
+                        </div>
+                        <!-- Tool: Tinkercad -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.6s"
+                            data-type="tool"
+                            data-title="Tinkercad"
+                            data-description="Experienced in Tinkercad for 3D design, electronics simulation (Arduino), and coding. Great for rapid prototyping and learning."
+                            data-technologies="3D Design, Arduino Simulation, Electronics Prototyping"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-lightbulb text-6xl text-yellow-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Tinkercad
+                            </h3>
+                        </div>
+                        <!-- Tool: MPLAB -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.7s"
+                            data-type="tool"
+                            data-title="MPLAB"
+                            data-description="Proficient in Microchip MPLAB IDE for developing and debugging embedded applications with PIC microcontrollers."
+                            data-technologies="PIC Microcontrollers, Embedded Development, Debugging"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-laptop-code text-6xl text-purple-300 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                MPLAB
+                            </h3>
+                        </div>
+                        <!-- Tool: Raspberry Pi -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.8s"
+                            data-type="tool"
+                            data-title="Raspberry Pi"
+                            data-description="Experienced in developing projects on Raspberry Pi, including setting up operating systems, programming GPIO, and deploying applications."
+                            data-technologies="Single-Board Computers, Linux, GPIO, Embedded Systems"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fab fa-raspberry-pi text-6xl text-red-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Raspberry Pi
+                            </h3>
+                        </div>
+                        <!-- Tool: ESP -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 0.9s"
+                            data-type="tool"
+                            data-title="ESP (ESP32/ESP8266)"
+                            data-description="Skilled in programming ESP microcontrollers for IoT projects, Wi-Fi connectivity, and sensor integration."
+                            data-technologies="IoT, Wi-Fi, Microcontrollers, Embedded C/C++, MicroPython"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-wifi text-6xl text-blue-300 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                ESP
+                            </h3>
+                        </div>
+                        <!-- Tool: MS Word -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1s"
+                            data-type="tool"
+                            data-title="MS Word"
+                            data-description="Proficient in Microsoft Word for document creation, formatting, and professional report writing."
+                            data-technologies="Document Processing, Formatting, Reporting"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-file-word text-6xl text-blue-600 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                MS Word
+                            </h3>
+                        </div>
+                        <!-- Tool: Excel -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.1s"
+                            data-type="tool"
+                            data-title="Excel"
+                            data-description="Skilled in Microsoft Excel for data organization, analysis, and visualization, including formulas and pivot tables."
+                            data-technologies="Data Analysis, Spreadsheets, Formulas, Charts"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-file-excel text-6xl text-green-600 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Excel
+                            </h3>
+                        </div>
+                        <!-- Tool: Jupyter -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.2s"
+                            data-type="tool"
+                            data-title="Jupyter Notebook"
+                            data-description="Experienced in Jupyter Notebook for interactive computing, data science workflows, and prototyping."
+                            data-technologies="Interactive Computing, Data Science, Python, R, Julia"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-flask text-6xl text-orange-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Jupyter
+                            </h3>
+                        </div>
+                        <!-- Tool: Google Collab -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.3s"
+                            data-type="tool"
+                            data-title="Google Colaboratory"
+                            data-description="Proficient in Google Colaboratory for cloud-based Python development, machine learning, and collaborative coding."
+                            data-technologies="Cloud Computing, Python, Machine Learning, Deep Learning"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-cloud text-6xl text-yellow-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Google Collab
+                            </h3>
+                        </div>
+                        <!-- Tool: Linux -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.4s"
+                            data-type="tool"
+                            data-title="Linux"
+                            data-description="Experienced in using Linux operating systems for development, system administration, and command-line operations."
+                            data-technologies="Operating Systems, Command Line, Scripting, System Administration"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fab fa-linux text-6xl text-gray-300 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Linux
+                            </h3>
+                        </div>
+                        <!-- Tool: Wokwi -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.5s"
+                            data-type="tool"
+                            data-title="Wokwi"
+                            data-description="Skilled in Wokwi for online simulation of Arduino, ESP32, and other embedded projects, including circuit and code simulation."
+                            data-technologies="Online Simulation, Arduino, ESP32, Embedded Development"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-code-branch text-6xl text-cyan-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Wokwi
+                            </h3>
+                        </div>
+                        <!-- Tool: CMOS -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.6s"
+                            data-type="tool"
+                            data-title="CMOS (Complementary Metal-Oxide-Semiconductor)"
+                            data-description="Understanding of CMOS technology for digital and analog circuit design, including MOSFET characteristics and fabrication principles."
+                            data-technologies="VLSI, MOSFETs, Digital Circuits, Analog Circuits"
+                            data-certifications="Nil"
+                        >
+                            <!-- Simple SVG for MOSFET -->
+                            <svg
+                                class="w-16 h-16 text-yellow-500 mb-4 skill-icon mx-auto"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 7h2v10h-2zM8 11h8v2H8z"
+                                />
+                            </svg>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                CMOS
+                            </h3>
+                        </div>
+                        <!-- Tool: PID Control -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.7s"
+                            data-type="tool"
+                            data-title="PID Control"
+                            data-description="Knowledge and application of PID (Proportional-Integral-Derivative) control for precise system regulation and stability."
+                            data-technologies="Control Systems, Feedback Control, Automation"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-cogs text-6xl text-gray-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                PID Control
+                            </h3>
+                        </div>
+                        <!-- Tool: Motor Control -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.8s"
+                            data-type="tool"
+                            data-title="Motor Control"
+                            data-description="Experienced in controlling various types of motors (DC, Stepper, Servo) for robotics, automation, and embedded applications."
+                            data-technologies="Motors, Robotics, Embedded Systems, PWM"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-fan text-6xl text-pink-400 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Motor Control
+                            </h3>
+                        </div>
+                        <!-- Tool: Anaconda -->
+                        <div
+                            class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
+                            style="--delay: 1.9s"
+                            data-type="tool"
+                            data-title="Anaconda"
+                            data-description="Proficient in using Anaconda for Python and R data science, including package management and environment isolation."
+                            data-technologies="Python, R, Data Science, Package Management, Environment Management"
+                            data-certifications="Nil"
+                        >
+                            <i
+                                class="fas fa-box text-6xl text-green-500 mb-4 skill-icon"
+                            ></i>
+                            <h3 class="text-xl font-semibold text-gray-100">
+                                Anaconda
                             </h3>
                         </div>
                     </div>
@@ -846,7 +1203,7 @@
                 <h2
                     class="text-4xl font-bold text-center text-indigo-400 mb-12"
                 >
-                    Certifications
+                    📜 Certifications & Technical Courses
                 </h2>
                 <div
                     class="relative z-10 text-lg text-gray-300 leading-relaxed"
@@ -896,51 +1253,189 @@
             <!-- Extracurricular Activities Section -->
             <section
                 id="extracurriculars"
-                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always"
+                class="relative container mx-auto px-6 py-16 rounded-lg shadow-xl bg-gray-800 my-16 overflow-hidden animate-on-scroll float-always w-max"
             >
                 <h2
                     class="text-4xl font-bold text-center text-indigo-400 mb-12"
                 >
-                    Extracurricular Activities
+                    Extracurriculars
                 </h2>
                 <div
                     class="relative z-10 text-lg text-gray-300 leading-relaxed"
                 >
-                    <ul class="list-disc list-inside space-y-4">
+                    <ul class="list-none space-y-6">
                         <li>
-                            <strong class="text-indigo-300"
-                                >Volunteer Mentor</strong
+                            <h4
+                                class="text-2xl font-semibold text-indigo-300 mb-2"
                             >
-                            for aspiring web developers at a local community
-                            center, guiding them through their first coding
-                            projects and career advice.
+                                BYTE Workshop – Texas Instruments (May 2025 –
+                                Jun 2025)
+                            </h4>
+                            <ul
+                                class="list-disc list-inside space-y-2 pl-4 text-gray-400"
+                            >
+                                <li>
+                                    Selected through a competitive process for a
+                                    6-week workshop on core concepts and
+                                    real-world applications of analog
+                                    electronics.
+                                </li>
+                                <li>
+                                    Acquired foundational knowledge of analog
+                                    circuits, op-amp configurations, and analog
+                                    filter design techniques.
+                                </li>
+                            </ul>
                         </li>
+
                         <li>
-                            <strong class="text-indigo-300"
-                                >Co-organizer of local Tech Meetups</strong
-                            >, responsible for planning events, inviting
-                            speakers, and fostering a collaborative environment
-                            for developers.
+                            <h4
+                                class="text-2xl font-semibold text-indigo-300 mb-2"
+                            >
+                                Robotics Interest Group, NIT Calicut (Oct 2024 –
+                                Present)
+                            </h4>
+                            <ul
+                                class="list-disc list-inside space-y-2 pl-4 text-gray-400"
+                            >
+                                <li>
+                                    Contributed to the design and development of
+                                    robotics projects such as RIGGU (humanoid),
+                                    line-following bots, maze-solvers, and a
+                                    dry-leaves sweeping robot.
+                                </li>
+                                <li>
+                                    Gained hands-on experience in embedded
+                                    systems, motor control, and sensor
+                                    integration.
+                                </li>
+                            </ul>
                         </li>
+
                         <li>
-                            Active participant in
-                            <strong class="text-indigo-300"
-                                >open-source projects on GitHub</strong
-                            >, contributing to the development and maintenance
-                            of various tools and libraries.
+                            <h4
+                                class="text-2xl font-semibold text-indigo-300 mb-2"
+                            >
+                                Tathva’24 – Junior Executive, Electrical Section
+                                (Mar 2024 – Oct 2024)
+                            </h4>
+                            <ul
+                                class="list-disc list-inside space-y-2 pl-4 text-gray-400"
+                            >
+                                <li>
+                                    Led event content, design, and public
+                                    outreach for Disarmamine, Mazodecipher, and
+                                    AccelerobotX at NIT Calicut’s annual
+                                    technical fest.
+                                </li>
+                                <li>
+                                    Managed team coordination, volunteer
+                                    allocation, and ensured smooth event
+                                    execution.
+                                </li>
+                            </ul>
                         </li>
+
                         <li>
-                            <strong class="text-indigo-300"
-                                >Captain of the University Debate Team</strong
-                            >, which significantly enhanced my public speaking,
-                            critical thinking, and logical argumentation skills.
+                            <h4
+                                class="text-2xl font-semibold text-indigo-300 mb-2"
+                            >
+                                Poster Designing
+                            </h4>
+                            <ul
+                                class="list-disc list-inside space-y-2 pl-4 text-gray-400"
+                            >
+                                <li>
+                                    Designed event posters and banners,
+                                    enhancing visual communication and clarity.
+                                </li>
+                                <li>
+                                    Developed a strong aesthetic sense and
+                                    visual storytelling skills.
+                                </li>
+                            </ul>
                         </li>
+
                         <li>
-                            Engaged in
-                            <strong class="text-indigo-300"
-                                >competitive gaming (eSports)</strong
-                            >, improving teamwork, strategic planning, and quick
-                            decision-making under pressure.
+                            <h4
+                                class="text-2xl font-semibold text-indigo-300 mb-2"
+                            >
+                                Event Management (Aug 2024 – Present)
+                            </h4>
+                            <ul
+                                class="list-disc list-inside space-y-2 pl-4 text-gray-400"
+                            >
+                                <li>
+                                    Coordinated workshops and successfully
+                                    executed three EEE section competitions
+                                    during a technical fest.
+                                </li>
+                                <li>
+                                    Served as a Program Committee Member for
+                                    Ekasva, managing logistics and operations.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h4
+                                class="text-2xl font-semibold text-indigo-300 mb-2"
+                            >
+                                Public Relations Committee(Sep 2023 – Present)
+                            </h4>
+                            <ul
+                                class="list-disc list-inside space-y-2 pl-4 text-gray-400"
+                            >
+                                <li>
+                                    Built and maintained sponsor and media
+                                    relationships for college events.
+                                </li>
+                                <li>
+                                    Drafted proposals, handled communications,
+                                    and ensured consistent messaging across
+                                    platforms.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h4
+                                class="text-2xl font-semibold text-indigo-300 mb-2"
+                            >
+                                Marketing Committee(Aug 2024 – Present)
+                            </h4>
+                            <ul
+                                class="list-disc list-inside space-y-2 pl-4 text-gray-400"
+                            >
+                                <li>
+                                    Executed event promotion strategies across
+                                    social and offline platforms.
+                                </li>
+                                <li>
+                                    Created content, managed outreach, and
+                                    analyzed engagement to improve reach.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h4
+                                class="text-2xl font-semibold text-indigo-300 mb-2"
+                            >
+                                Taekwondo (Jun 2015 – May 2018)
+                            </h4>
+                            <ul
+                                class="list-disc list-inside space-y-2 pl-4 text-gray-400"
+                            >
+                                <li>
+                                    Trained in martial arts and competed in
+                                    inter-school events.
+                                </li>
+                                <li>
+                                    Won a bronze medal; demonstrated discipline,
+                                    resilience, and athleticism.
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -980,13 +1475,26 @@
                             <i class="fab fa-linkedin"></i>
                             <span class="sr-only">LinkedIn</span>
                         </a>
-                        <a
-                            href="mailto:saitejaswi1002@gmail.com"
-                            class="social-icon-link gmail text-gray-400 hover:text-white transition-colors duration-300"
-                        >
-                            <i class="fas fa-envelope-square"></i>
-                            <span class="sr-only">Email</span>
-                        </a>
+                        <div class="email-tooltip-container">
+                            <a
+                                href="mailto:saitejaswi1002@gmail.com"
+                                class="social-icon-link gmail text-gray-400 hover:text-white transition-colors duration-300"
+                            >
+                                <i class="fas fa-envelope-square"></i>
+                                <span class="sr-only">Email</span>
+                            </a>
+                            <div class="tooltip-content">
+                                <span id="email-address"
+                                    >saitejaswi1002@gmail.com</span
+                                >
+                                <button
+                                    class="copy-button"
+                                    aria-label="Copy email address"
+                                >
+                                    <i class="far fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                     <p class="mt-12 text-gray-400 text-sm">

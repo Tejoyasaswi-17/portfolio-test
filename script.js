@@ -505,3 +505,36 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const copyButton = document.querySelector('.copy-button');
+    const emailAddressSpan = document.getElementById('email-address');
+
+    if (copyButton && emailAddressSpan) {
+        copyButton.addEventListener('click', function () {
+            const email = emailAddressSpan.textContent;
+
+            navigator.clipboard.writeText(email).then(() => {
+                const originalIcon = copyButton.innerHTML;
+                copyButton.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(() => {
+                    copyButton.innerHTML = originalIcon;
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy email: ', err);
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                textArea.remove();
+
+                const originalIcon = copyButton.innerHTML;
+                copyButton.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(() => {
+                    copyButton.innerHTML = originalIcon;
+                }, 2000);
+            });
+        });
+    }
+});
