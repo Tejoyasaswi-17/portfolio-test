@@ -1,3 +1,4 @@
+// script.js
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const href = anchor.getAttribute("href");
@@ -356,8 +357,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalCertificationsSection = document.getElementById(
         "modalCertifications"
     );
-    const showFullDetailsBtn =
-        document.getElementById("showFullDetailsBtn");
 
     if (
         detailModal &&
@@ -367,8 +366,7 @@ document.addEventListener("DOMContentLoaded", () => {
         certList &&
         modalLiveLink &&
         modalGithubLink &&
-        modalCertificationsSection &&
-        showFullDetailsBtn
+        modalCertificationsSection
     ) {
         function openModal(data) {
             modalTitle.textContent =
@@ -426,30 +424,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 modalGithubLink.classList.remove("hidden");
             } else {
                 modalGithubLink.classList.add("hidden");
-            }
-
-            if (data.fullDescription) {
-                showFullDetailsBtn.classList.remove("hidden");
-                showFullDetailsBtn.onclick = () => {
-                    // Store all relevant project data in local storage
-                    localStorage.setItem(
-                        "currentProjectData",
-                        JSON.stringify({
-                            title: data.title,
-                            fullDescription: data.fullDescription,
-                            technologies: data.technologies,
-                            certifications: data.certifications,
-                            liveLink: data.liveLink,
-                            githubLink: data.githubLink,
-                        })
-                    );
-                    window.open(
-                        "project-full-details.html",
-                        "_blank"
-                    );
-                };
-            } else {
-                showFullDetailsBtn.classList.add("hidden");
             }
 
             detailModal.classList.add("is-open");
