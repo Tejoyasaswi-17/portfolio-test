@@ -567,7 +567,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (descriptionPoints.length > 0) {
                     const ul = document.createElement('ul');
-                    ul.classList.add('list-disc', 'list-inside', 'space-y-2', 'text-gray-300');
+                    ul.classList.add('list-disc', 'list-inside', 'space-y-2', 'ml-[15px]', 'text-gray-300');
 
                     descriptionPoints.forEach(pointText => {
                         const li = document.createElement('li');
