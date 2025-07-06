@@ -551,10 +551,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalLiveLink = document.getElementById('modalLiveLink');
     const modalGithubLink = document.getElementById('modalGithubLink');
 
-    [...projectCards, ...skillCards].forEach(card => {
+    [...skillCards, ...projectCards].forEach(card => {
         card.addEventListener('click', function () {
             const title = card.dataset.title;
-            const fullDescription = card.dataset.fullDescription;
+            const fullDescription = card.dataset.fullDescription || card.dataset.description;
             const technologies = card.dataset.technologies;
             const githubLink = card.dataset.githubLink;
 
@@ -562,7 +562,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             modalBriefDescription.innerHTML = '';
 
-            if (fullDescription) {
+            if (card.dataset.type === 'project' && fullDescription) {
                 const descriptionPoints = fullDescription.split('$$').filter(point => point.trim() !== '');
 
                 if (descriptionPoints.length > 0) {
@@ -584,7 +584,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
 
                 const p = document.createElement('p');
-                p.textContent = "No detailed description available for this project.";
+                p.textContent = fullDescription ? fullDescription : "No detailed description available for this project.";
                 p.classList.add('text-gray-300', 'mb-6');
                 modalBriefDescription.appendChild(p);
             }
@@ -599,22 +599,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     techTags.appendChild(span);
                 });
             } else {
-                modalTechnologies.classList.add('hidden'); // Hide if no technologies are provided
+                modalTechnologies.classList.add('hidden');
             }
 
             // Populate Links section
             if (githubLink) {
                 modalGithubLink.href = githubLink;
-                modalGithubLink.classList.remove('hidden'); // Show GitHub link
+                modalGithubLink.classList.remove('hidden');
             } else {
-                modalGithubLink.classList.add('hidden'); // Hide GitHub link if not available
+                modalGithubLink.classList.add('hidden');
             }
-            modalLiveLink.classList.add('hidden'); // Hide Live Demo link by default if not implemented yet
-
-            // Hide Certifications section by default unless you have data for it
+            modalLiveLink.classList.add('hidden');
             modalCertifications.classList.add('hidden');
-
-            // Show the modal
             detailModal.classList.remove('hidden');
         });
     });
@@ -625,7 +621,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     detailModal.addEventListener('click', function (event) {
-        // Close modal if click is on the overlay itself, not inside the modal content
         if (event.target === detailModal) {
             detailModal.classList.add('hidden');
         }

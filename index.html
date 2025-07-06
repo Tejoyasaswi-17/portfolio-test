@@ -4,14 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sai Tejaswi's Portfolio</title>
-        <!-- Tailwind CSS CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
-        <!-- Google Fonts - Inter -->
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
             rel="stylesheet"
         />
-        <!-- Font Awesome for Icons -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -19,24 +16,20 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body class="bg-gray-900 text-gray-200">
-        <!-- Galaxy Background Container -->
         <div class="galaxy-background"></div>
-
-        <!-- Header / Navigation Bar -->
         <header
             class="bg-gray-800 p-4 shadow-lg sticky top-0 z-50 rounded-b-lg"
         >
             <nav
                 class="container mx-auto flex justify-between items-center px-4 md:px-0"
             >
-                <!-- Custom Logo -->
                 <a
                     href="#hero"
                     class="flex items-center text-indigo-400 hover:text-indigo-300 transition-colors duration-300"
                 >
                     <img
                         id="website-logo"
-                        src="logo.png"
+                        src="assets/logo.png"
                         alt="Portfolio Logo"
                         class="h-10 w-10 mr-2 rounded-full object-cover website-logo-flashy"
                     />
@@ -186,7 +179,7 @@
                         style="animation-delay: 0.2s"
                     >
                         <img
-                            src="profile_pic.png"
+                            src="assets/profile_pic.png"
                             alt="Your Photo"
                             class="w-64 h-64 rounded-full border-4 border-indigo-500 shadow-lg object-cover transform transition-transform duration-500 hover:scale-105 hover:rotate-3"
                         />
@@ -536,14 +529,13 @@
                                 YOLO
                             </h3>
                         </div>
-                        <!-- Skill: C# -->
+                        <!-- Skill: Assembly -->
                         <div
                             class="skill-card bg-gray-700 p-6 rounded-lg shadow-lg card-effect animated-skill-card animate-on-scroll"
                             style="--delay: 1.1s"
                             data-type="skill"
-                            data-title="C#"
-                            data-description="Basic understanding of C# for application development, particularly in the .NET ecosystem."
-                            data-technologies="C#, .NET, Object-Oriented Programming"
+                            data-title="Assembly"
+                            data-description="Basic understanding of Assembly for PIC18F"
                             data-certifications="Nil"
                         >
                             <i
@@ -953,7 +945,9 @@
                         data-type="project"
                         data-title="Semi-Humanoid Robot (RIGGU)"
                         data-brief-description="A responsive web application for a fictional e-commerce store, featuring product catalog and shopping cart."
-                        data-full-description="This project involved designing and building RIGGU, a semi-humanoid robot focused on human-robot interaction.$$ Key features include a modular design for easy upgrades and maintenance.$$ The robot utilizes ROS2 for robust communication and control, allowing for complex task execution.$$ Micro-ROS on ESP32 enables efficient communication with embedded hardware.$$ PyQt5 was used for developing a custom graphical user interface for real-time control and monitoring.$$ Challenges included integrating diverse hardware and software components seamlessly."
+                        data-full-description="Architected a ROS2 system enabling joystick-based differential drive control via micro-ROS on ESP32$$
+Integrated 2D SLAM (RPLiDAR + Nav2) and real-time voice-command interaction using Gemini APIs for conversational control.
+"
                         data-technologies="Python, ROS2 (Humble), ESP32 (micro-ROS), Linux, PyQt5"
                         data-github-link="https://github.com/yourusername/ecommerce-repo"
                     >
@@ -1021,10 +1015,11 @@
                     <div
                         class="project-card bg-gray-700 rounded-lg shadow-lg overflow-hidden card-effect group float-always animate-on-scroll"
                         data-type="project"
-                        data-title="Data Visualization Dashboard"
-                        data-brief-description="A data visualization tool built with Flask and D3.js to analyze public health data."
-                        data-full-description="This project involved building an interactive data visualization dashboard using Flask for the backend and D3.js for dynamic frontend visualizations. The dashboard processes and displays public health data from a PostgreSQL database, allowing users to filter data by region, time period, and health metric. Visualizations include interactive bar charts, line graphs, and choropleth maps, providing insights into disease prevalence and health trends. Key challenges included efficiently handling large datasets and creating custom, performant D3.js visualizations that could adapt to various data dimensions."
-                        data-technologies="Python, Flask, D3.js, PostgreSQL"
+                        data-title="Face Recognition-Based Attendance System"
+                        data-brief-description="A Raspberry Pi-based real-time face recognition system for automated attendance logging and database management."
+                        data-full-description="Deployed real-time face detection with YOLOv8 and OpenCV; automated logging into a SQL database$$Achieved ~70% recognition accuracy under varying lighting, reducing manual work by 6+ admin hours per week.
+"
+                        data-technologies="Python, OpenCV, PyQt6, SQL, YOLOv8, Raspberry Pi"
                         data-github-link="https://github.com/yourusername/data-viz-repo"
                     >
                         <div
@@ -1045,11 +1040,12 @@
                         </div>
                         <div class="p-6">
                             <h3 class="text-2xl font-bold text-indigo-300 mb-3">
-                                Data Visualization Dashboard
+                                Face Recognition-Based Attendance System
                             </h3>
                             <p class="text-gray-300 mb-4 text-sm">
-                                A data visualization tool built with Flask and
-                                D3.js to analyze public health data.
+                                A Raspberry Pi-based real-time face recognition
+                                system for automated attendance logging and
+                                database management.
                             </p>
                             <div class="flex flex-wrap gap-2 text-sm mb-4">
                                 <span
@@ -1058,11 +1054,23 @@
                                 >
                                 <span
                                     class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
-                                    >D3.js</span
+                                    >OpenCV</span
                                 >
                                 <span
                                     class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
-                                    >Flask</span
+                                    >PyQt6</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >SQL</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >YOLOv8</span
+                                >
+                                <span
+                                    class="bg-gray-600 text-gray-300 px-3 py-1 rounded-full"
+                                    >Raspberry Pi</span
                                 >
                             </div>
                             <div class="flex justify-between items-center">
